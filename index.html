@@ -1,0 +1,1795 @@
+<p><!DOCTYPE html></p>
+
+<p><html lang="en"></p>
+
+<p><head></p>
+
+<p>    <meta charset="UTF-8"></p>
+
+<p>    <meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+
+<p>    <title>Nexus Solutions | Business Solutions Provider</title></p>
+
+<p>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></p>
+
+<p>    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet"></p>
+
+<p>    <style></p>
+
+<p>        * {</p>
+
+<p>            margin: 0;</p>
+
+<p>            padding: 0;</p>
+
+<p>            box-sizing: border-box;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        :root {</p>
+
+<p>            --primary: #4361ee;</p>
+
+<p>            --secondary: #3f37c9;</p>
+
+<p>            --accent: #4895ef;</p>
+
+<p>            --dark: #2b2d42;</p>
+
+<p>            --light: #f8f9fa;</p>
+
+<p>            --gray: #8d99ae;</p>
+
+<p>            --success: #4cc9f0;</p>
+
+<p>            --transition: all 0.3s ease;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        body {</p>
+
+<p>            font-family: 'Poppins', sans-serif;</p>
+
+<p>            line-height: 1.6;</p>
+
+<p>            color: var(--dark);</p>
+
+<p>            background-color: #fafafa;</p>
+
+<p>            overflow-x: hidden;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .container {</p>
+
+<p>            width: 90%;</p>
+
+<p>            max-width: 1200px;</p>
+
+<p>            margin: 0 auto;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Header Styles */</p>
+
+<p>        header {</p>
+
+<p>            background: linear-gradient(135deg, var(--primary), var(--secondary));</p>
+
+<p>            color: white;</p>
+
+<p>            padding: 1rem 0;</p>
+
+<p>            position: fixed;</p>
+
+<p>            width: 100%;</p>
+
+<p>            top: 0;</p>
+
+<p>            z-index: 1000;</p>
+
+<p>            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .header-container {</p>
+
+<p>            display: flex;</p>
+
+<p>            justify-content: space-between;</p>
+
+<p>            align-items: center;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .logo {</p>
+
+<p>            font-family: 'Montserrat', sans-serif;</p>
+
+<p>            font-size: 1.8rem;</p>
+
+<p>            font-weight: 800;</p>
+
+<p>            display: flex;</p>
+
+<p>            align-items: center;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .logo i {</p>
+
+<p>            margin-right: 0.5rem;</p>
+
+<p>            color: var(--success);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        nav ul {</p>
+
+<p>            display: flex;</p>
+
+<p>            list-style: none;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        nav ul li {</p>
+
+<p>            margin-left: 2rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        nav ul li a {</p>
+
+<p>            color: white;</p>
+
+<p>            text-decoration: none;</p>
+
+<p>            font-weight: 500;</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>            position: relative;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        nav ul li a:hover {</p>
+
+<p>            color: var(--success);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        nav ul li a::after {</p>
+
+<p>            content: '';</p>
+
+<p>            position: absolute;</p>
+
+<p>            bottom: -5px;</p>
+
+<p>            left: 0;</p>
+
+<p>            width: 0;</p>
+
+<p>            height: 2px;</p>
+
+<p>            background-color: var(--success);</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        nav ul li a:hover::after {</p>
+
+<p>            width: 100%;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .btn {</p>
+
+<p>            display: inline-block;</p>
+
+<p>            background: var(--success);</p>
+
+<p>            color: white;</p>
+
+<p>            padding: 0.8rem 1.8rem;</p>
+
+<p>            border-radius: 50px;</p>
+
+<p>            text-decoration: none;</p>
+
+<p>            font-weight: 500;</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>            border: none;</p>
+
+<p>            cursor: pointer;</p>
+
+<p>            box-shadow: 0 4px 15px rgba(76, 201, 240, 0.4);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .btn:hover {</p>
+
+<p>            transform: translateY(-3px);</p>
+
+<p>            box-shadow: 0 6px 20px rgba(76, 201, 240, 0.6);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Hero Section */</p>
+
+<p>        .hero {</p>
+
+<p>            padding: 6rem 0 3rem;</p>
+
+<p>            background: linear-gradient(135deg, #f0f7ff, #e3eeff);</p>
+
+<p>            position: relative;</p>
+
+<p>            overflow: hidden;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-content {</p>
+
+<p>            display: flex;</p>
+
+<p>            align-items: center;</p>
+
+<p>            justify-content: space-between;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-text {</p>
+
+<p>            flex: 1;</p>
+
+<p>            padding-right: 2rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-text h1 {</p>
+
+<p>            font-family: 'Montserrat', sans-serif;</p>
+
+<p>            font-size: 3.5rem;</p>
+
+<p>            line-height: 1.2;</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>            color: var(--dark);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-text h1 span {</p>
+
+<p>            color: var(--primary);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-text p {</p>
+
+<p>            font-size: 1.1rem;</p>
+
+<p>            margin-bottom: 2rem;</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            max-width: 600px;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-image {</p>
+
+<p>            flex: 1;</p>
+
+<p>            position: relative;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .hero-image img {</p>
+
+<p>            width: 100%;</p>
+
+<p>            max-width: 600px;</p>
+
+<p>            border-radius: 20px;</p>
+
+<p>            box-shadow: 0 20px 40px rgba(67, 97, 238, 0.2);</p>
+
+<p>            animation: float 6s ease-in-out infinite;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        @keyframes float {</p>
+
+<p>            0% { transform: translateY(0px); }</p>
+
+<p>            50% { transform: translateY(-20px); }</p>
+
+<p>            100% { transform: translateY(0px); }</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Services Section */</p>
+
+<p>        .services {</p>
+
+<p>            padding: 4rem 0;</p>
+
+<p>            background-color: white;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .section-title {</p>
+
+<p>            text-align: center;</p>
+
+<p>            margin-bottom: 2.5rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .section-title h2 {</p>
+
+<p>            font-family: 'Montserrat', sans-serif;</p>
+
+<p>            font-size: 2.5rem;</p>
+
+<p>            color: var(--dark);</p>
+
+<p>            position: relative;</p>
+
+<p>            display: inline-block;</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .section-title h2::after {</p>
+
+<p>            content: '';</p>
+
+<p>            position: absolute;</p>
+
+<p>            bottom: -10px;</p>
+
+<p>            left: 50%;</p>
+
+<p>            transform: translateX(-50%);</p>
+
+<p>            width: 80px;</p>
+
+<p>            height: 4px;</p>
+
+<p>            background: var(--primary);</p>
+
+<p>            border-radius: 2px;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .section-title p {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            max-width: 700px;</p>
+
+<p>            margin: 0 auto;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .services-grid {</p>
+
+<p>            display: grid;</p>
+
+<p>            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
+
+<p>            gap: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .service-card {</p>
+
+<p>            background: white;</p>
+
+<p>            border-radius: 15px;</p>
+
+<p>            padding: 1.5rem 1rem;</p>
+
+<p>            text-align: center;</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);</p>
+
+<p>            border: 1px solid #f0f0f0;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .service-card:hover {</p>
+
+<p>            transform: translateY(-10px);</p>
+
+<p>            box-shadow: 0 15px 35px rgba(67, 97, 238, 0.15);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .service-card i {</p>
+
+<p>            font-size: 3rem;</p>
+
+<p>            color: var(--primary);</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .service-card h3 {</p>
+
+<p>            font-size: 1.5rem;</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>            color: var(--dark);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .service-card p {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* About Section */</p>
+
+<p>        .about {</p>
+
+<p>            padding: 4rem 0;</p>
+
+<p>            background: linear-gradient(135deg, #f0f7ff, #e3eeff);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .about-content {</p>
+
+<p>            display: flex;</p>
+
+<p>            align-items: center;</p>
+
+<p>            gap: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .about-image {</p>
+
+<p>            flex: 1;</p>
+
+<p>            position: relative;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .about-image img {</p>
+
+<p>            width: 100%;</p>
+
+<p>            border-radius: 20px;</p>
+
+<p>            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .about-text {</p>
+
+<p>            flex: 1;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .about-text h2 {</p>
+
+<p>            font-family: 'Montserrat', sans-serif;</p>
+
+<p>            font-size: 2.5rem;</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>            color: var(--dark);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .about-text p {</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>            color: var(--gray);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .stats {</p>
+
+<p>            display: flex;</p>
+
+<p>            gap: 1rem;</p>
+
+<p>            margin-top: 2rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .stat-item {</p>
+
+<p>            text-align: center;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .stat-item h3 {</p>
+
+<p>            font-size: 2.5rem;</p>
+
+<p>            color: var(--primary);</p>
+
+<p>            margin-bottom: 0.5rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .stat-item p {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            font-weight: 500;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Testimonials */</p>
+
+<p>        .testimonials {</p>
+
+<p>            padding: 4rem 0;</p>
+
+<p>            background-color: white;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .testimonial-grid {</p>
+
+<p>            display: grid;</p>
+
+<p>            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
+
+<p>            gap: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .testimonial-card {</p>
+
+<p>            background: white;</p>
+
+<p>            border-radius: 15px;</p>
+
+<p>            padding: 2rem;</p>
+
+<p>            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);</p>
+
+<p>            border: 1px solid #f0f0f0;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .testimonial-card p {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>            font-style: italic;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .client {</p>
+
+<p>            display: flex;</p>
+
+<p>            align-items: center;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .client img {</p>
+
+<p>            width: 60px;</p>
+
+<p>            height: 60px;</p>
+
+<p>            border-radius: 50%;</p>
+
+<p>            object-fit: cover;</p>
+
+<p>            margin-right: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .client-info h4 {</p>
+
+<p>            color: var(--dark);</p>
+
+<p>            margin-bottom: 0.2rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .client-info p {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            margin: 0;</p>
+
+<p>            font-style: normal;</p>
+
+<p>            font-size: 0.9rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Contact Section */</p>
+
+<p>        .contact {</p>
+
+<p>            padding: 4rem 0;</p>
+
+<p>            background: linear-gradient(135deg, var(--primary), var(--secondary));</p>
+
+<p>            color: white;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact .section-title h2 {</p>
+
+<p>            color: white;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact .section-title p {</p>
+
+<p>            color: rgba(255, 255, 255, 0.8);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-container {</p>
+
+<p>            display: flex;</p>
+
+<p>            gap: 1rem;</p>
+
+<p>            margin-top: 1.5rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-info {</p>
+
+<p>            flex: 1;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-info h3 {</p>
+
+<p>            font-size: 1.8rem;</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-info p {</p>
+
+<p>            margin-bottom: 2rem;</p>
+
+<p>            opacity: 0.9;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-details {</p>
+
+<p>            display: flex;</p>
+
+<p>            flex-direction: column;</p>
+
+<p>            gap: 1.5rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-item {</p>
+
+<p>            display: flex;</p>
+
+<p>            align-items: flex-start;</p>
+
+<p>            gap: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-item i {</p>
+
+<p>            font-size: 1.5rem;</p>
+
+<p>            color: var(--success);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-form {</p>
+
+<p>            flex: 1;</p>
+
+<p>            background: white;</p>
+
+<p>            padding: 1.5rem;</p>
+
+<p>            border-radius: 15px;</p>
+
+<p>            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .form-group {</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .form-group label {</p>
+
+<p>            display: block;</p>
+
+<p>            margin-bottom: 0.5rem;</p>
+
+<p>            color: var(--dark);</p>
+
+<p>            font-weight: 500;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .form-group input,</p>
+
+<p>        .form-group textarea {</p>
+
+<p>            width: 100%;</p>
+
+<p>            padding: 0.8rem 1rem;</p>
+
+<p>            border: 1px solid #e0e0e0;</p>
+
+<p>            border-radius: 8px;</p>
+
+<p>            font-family: 'Poppins', sans-serif;</p>
+
+<p>            font-size: 1rem;</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .form-group input:focus,</p>
+
+<p>        .form-group textarea:focus {</p>
+
+<p>            border-color: var(--primary);</p>
+
+<p>            outline: none;</p>
+
+<p>            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .form-group textarea {</p>
+
+<p>            height: 150px;</p>
+
+<p>            resize: vertical;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .contact-form .btn {</p>
+
+<p>            background: var(--primary);</p>
+
+<p>            width: 100%;</p>
+
+<p>            font-size: 1.1rem;</p>
+
+<p>            padding: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Footer */</p>
+
+<p>        footer {</p>
+
+<p>            background-color: var(--dark);</p>
+
+<p>            color: white;</p>
+
+<p>            padding: 4rem 0 2rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-container {</p>
+
+<p>            display: grid;</p>
+
+<p>            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+
+<p>            gap: 1.5rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col h3 {</p>
+
+<p>            font-size: 1.5rem;</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>            position: relative;</p>
+
+<p>            padding-bottom: 0.8rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col h3::after {</p>
+
+<p>            content: '';</p>
+
+<p>            position: absolute;</p>
+
+<p>            bottom: 0;</p>
+
+<p>            left: 0;</p>
+
+<p>            width: 50px;</p>
+
+<p>            height: 2px;</p>
+
+<p>            background: var(--primary);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col p {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            margin-bottom: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .social-links {</p>
+
+<p>            display: flex;</p>
+
+<p>            gap: 1rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .social-links a {</p>
+
+<p>            display: flex;</p>
+
+<p>            align-items: center;</p>
+
+<p>            justify-content: center;</p>
+
+<p>            width: 40px;</p>
+
+<p>            height: 40px;</p>
+
+<p>            background: rgba(255, 255, 255, 0.1);</p>
+
+<p>            border-radius: 50%;</p>
+
+<p>            color: white;</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .social-links a:hover {</p>
+
+<p>            background: var(--primary);</p>
+
+<p>            transform: translateY(-3px);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col ul {</p>
+
+<p>            list-style: none;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col ul li {</p>
+
+<p>            margin-bottom: 0.8rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col ul li a {</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            text-decoration: none;</p>
+
+<p>            transition: var(--transition);</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .footer-col ul li a:hover {</p>
+
+<p>            color: var(--primary);</p>
+
+<p>            padding-left: 5px;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        .copyright {</p>
+
+<p>            text-align: center;</p>
+
+<p>            padding-top: 1.5rem;</p>
+
+<p>            margin-top: 1.5rem;</p>
+
+<p>            border-top: 1px solid rgba(255, 255, 255, 0.1);</p>
+
+<p>            color: var(--gray);</p>
+
+<p>            font-size: 0.9rem;</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        /* Responsive Design */</p>
+
+<p>        @media (max-width: 992px) {</p>
+
+<p>            .hero-content, .about-content {</p>
+
+<p>                flex-direction: column;</p>
+
+<p>                text-align: center;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .hero-text, .about-text {</p>
+
+<p>                padding-right: 0;</p>
+
+<p>                margin-bottom: 3rem;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .hero-text p, .about-text p {</p>
+
+<p>                max-width: 100%;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .stats {</p>
+
+<p>                justify-content: center;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .contact-container {</p>
+
+<p>                flex-direction: column;</p>
+
+<p>            }</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        @media (max-width: 768px) {</p>
+
+<p>            .hero-text h1 {</p>
+
+<p>                font-size: 2.8rem;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .section-title h2 {</p>
+
+<p>                font-size: 2rem;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .stats {</p>
+
+<p>                flex-direction: column;</p>
+
+<p>                gap: 1.5rem;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            nav ul {</p>
+
+<p>                display: none;</p>
+
+<p>            }</p>
+
+<p>            </p>
+
+<p>            .mobile-menu-btn {</p>
+
+<p>                display: block;</p>
+
+<p>                background: none;</p>
+
+<p>                border: none;</p>
+
+<p>                color: white;</p>
+
+<p>                font-size: 1.5rem;</p>
+
+<p>                cursor: pointer;</p>
+
+<p>            }</p>
+
+<p>        }</p>
+
+<p> </p>
+
+<p>        @media (min-width: 769px) {</p>
+
+<p>            .mobile-menu-btn {</p>
+
+<p>                display: none;</p>
+
+<p>            }</p>
+
+<p>        }</p>
+
+<p>    </style></p>
+
+<p></head></p>
+
+<p><body></p>
+
+<p>    <!-- Header --></p>
+
+<p>    <header></p>
+
+<p>        <div class="container header-container"></p>
+
+<p>            <div class="logo"></p>
+
+<p>                <i class="fas fa-cube"></i></p>
+
+<p>                <span>Nexus</span></p>
+
+<p>            </div></p>
+
+<p>            <nav></p>
+
+<p>                <ul></p>
+
+<p>                    <li><a href="#home">Home</a></li></p>
+
+<p>                    <li><a href="#services">Services</a></li></p>
+
+<p>                    <li><a href="#about">About</a></li></p>
+
+<p>                    <li><a href="#testimonials">Testimonials</a></li></p>
+
+<p>                    <li><a href="#contact">Contact</a></li></p>
+
+<p>                </ul></p>
+
+<p>            </nav></p>
+
+<p>            <button class="mobile-menu-btn"></p>
+
+<p>                <i class="fas fa-bars"></i></p>
+
+<p>            </button></p>
+
+<p>            <a href="#contact" class="btn">Get Started</a></p>
+
+<p>        </div></p>
+
+<p>    </header></p>
+
+<p> </p>
+
+<p>    <!-- Hero Section --></p>
+
+<p>    <section id="home" class="hero"></p>
+
+<p>        <div class="container hero-content"></p>
+
+<p>            <div class="hero-text"></p>
+
+<p>                <h1>Innovative Solutions for <span>Your Business</span></h1></p>
+
+<p>                <p>We help businesses transform their ideas into reality with cutting-edge technology solutions. Our team of experts delivers exceptional results tailored to your specific needs.</p></p>
+
+<p>                <div class="hero-btns"></p>
+
+<p>                    <a href="#services" class="btn">Our Services</a></p>
+
+<p>                    <a href="#contact" class="btn" style="background: transparent; border: 2px solid var(--primary); color: var(--primary); margin-left: 1rem;">Contact Us</a></p>
+
+<p>                </div></p>
+
+<p>            </div></p>
+
+<p>            <div class="hero-image"></p>
+
+<p>                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Business Solutions"></p>
+
+<p>            </div></p>
+
+<p>        </div></p>
+
+<p>    </section></p>
+
+<p> </p>
+
+<p>    <!-- Services Section --></p>
+
+<p>    <section id="services" class="services"></p>
+
+<p>        <div class="container"></p>
+
+<p>            <div class="section-title"></p>
+
+<p>                <h2>Our Services</h2></p>
+
+<p>                <p>We offer a comprehensive range of services to help your business grow and succeed in the digital world.</p></p>
+
+<p>            </div></p>
+
+<p>            <div class="services-grid"></p>
+
+<p>                <div class="service-card"></p>
+
+<p>                    <i class="fas fa-laptop-code"></i></p>
+
+<p>                    <h3>Web Development</h3></p>
+
+<p>                    <p>Custom websites and web applications built with the latest technologies to drive your business forward.</p></p>
+
+<p>                    <a href="#" class="btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Learn More</a></p>
+
+<p>                </div></p>
+
+<p>                <div class="service-card"></p>
+
+<p>                    <i class="fas fa-mobile-alt"></i></p>
+
+<p>                    <h3>App Development</h3></p>
+
+<p>                    <p>Native and cross-platform mobile applications designed to engage your customers on any device.</p></p>
+
+<p>                    <a href="#" class="btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Learn More</a></p>
+
+<p>                </div></p>
+
+<p>                <div class="service-card"></p>
+
+<p>                    <i class="fas fa-chart-line"></i></p>
+
+<p>                    <h3>Digital Marketing</h3></p>
+
+<p>                    <p>Data-driven marketing strategies to increase your online presence and generate quality leads.</p></p>
+
+<p>                    <a href="#" class="btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Learn More</a></p>
+
+<p>                </div></p>
+
+<p>            </div></p>
+
+<p>        </div></p>
+
+<p>    </section></p>
+
+<p> </p>
+
+<p>    <!-- About Section --></p>
+
+<p>    <section id="about" class="about"></p>
+
+<p>        <div class="container"></p>
+
+<p>            <div class="about-content"></p>
+
+<p>                <div class="about-image"></p>
+
+<p>                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="About Us"></p>
+
+<p>                </div></p>
+
+<p>                <div class="about-text"></p>
+
+<p>                    <h2>We Help Businesses Grow</h2></p>
+
+<p>                    <p>Founded in 2015, Nexus Solutions has been at the forefront of digital innovation, helping businesses of all sizes achieve their goals through technology.</p></p>
+
+<p>                    <p>Our team of experienced developers, designers, and strategists work together to deliver solutions that drive real business results.</p></p>
+
+<p>                    <div class="stats"></p>
+
+<p>                        <div class="stat-item"></p>
+
+<p>                            <h3>250+</h3></p>
+
+<p>                            <p>Projects Completed</p></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="stat-item"></p>
+
+<p>                            <h3>98%</h3></p>
+
+<p>                            <p>Client Satisfaction</p></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="stat-item"></p>
+
+<p>                            <h3>50+</h3></p>
+
+<p>                            <p>Team Members</p></p>
+
+<p>                        </div></p>
+
+<p>                    </div></p>
+
+<p>                </div></p>
+
+<p>            </div></p>
+
+<p>        </div></p>
+
+<p>    </section></p>
+
+<p> </p>
+
+<p>    <!-- Testimonials Section --></p>
+
+<p>    <section id="testimonials" class="testimonials"></p>
+
+<p>        <div class="container"></p>
+
+<p>            <div class="section-title"></p>
+
+<p>                <h2>What Our Clients Say</h2></p>
+
+<p>                <p>Don't just take our word for it. Here's what our clients have to say about working with us.</p></p>
+
+<p>            </div></p>
+
+<p>            <div class="testimonial-grid"></p>
+
+<p>                <div class="testimonial-card"></p>
+
+<p>                    <p>"Nexus Solutions transformed our outdated website into a modern platform that has significantly increased our online conversions."</p></p>
+
+<p>                    <div class="client"></p>
+
+<p>                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson"></p>
+
+<p>                        <div class="client-info"></p>
+
+<p>                            <h4>Sarah Johnson</h4></p>
+
+<p>                            <p>CEO, TechStart Inc.</p></p>
+
+<p>                        </div></p>
+
+<p>                    </div></p>
+
+<p>                </div></p>
+
+<p>                <div class="testimonial-card"></p>
+
+<p>                    <p>"The mobile app developed by Nexus has been instrumental in improving our customer engagement and retention rates."</p></p>
+
+<p>                    <div class="client"></p>
+
+<p>                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen"></p>
+
+<p>                        <div class="client-info"></p>
+
+<p>                            <h4>Michael Chen</h4></p>
+
+<p>                            <p>Marketing Director, RetailPro</p></p>
+
+<p>                        </div></p>
+
+<p>                    </div></p>
+
+<p>                </div></p>
+
+<p>                <div class="testimonial-card"></p>
+
+<p>                    <p>"Their digital marketing strategy helped us triple our online leads in just six months. Highly recommended!"</p></p>
+
+<p>                    <div class="client"></p>
+
+<p>                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez"></p>
+
+<p>                        <div class="client-info"></p>
+
+<p>                            <h4>Emma Rodriguez</h4></p>
+
+<p>                            <p>Founder, Growth Solutions</p></p>
+
+<p>                        </div></p>
+
+<p>                    </div></p>
+
+<p>                </div></p>
+
+<p>            </div></p>
+
+<p>        </div></p>
+
+<p>    </section></p>
+
+<p> </p>
+
+<p>    <!-- Contact Section --></p>
+
+<p>    <section id="contact" class="contact"></p>
+
+<p>        <div class="container"></p>
+
+<p>            <div class="section-title"></p>
+
+<p>                <h2>Get In Touch</h2></p>
+
+<p>                <p>Have a project in mind or want to learn more about our services? Contact us today.</p></p>
+
+<p>            </div></p>
+
+<p>            <div class="contact-container"></p>
+
+<p>                <div class="contact-info"></p>
+
+<p>                    <h3>Let's Talk About Your Project</h3></p>
+
+<p>                    <p>We're here to answer any questions you may have and help you determine which of our services best fit your needs.</p></p>
+
+<p>                    <div class="contact-details"></p>
+
+<p>                        <div class="contact-item"></p>
+
+<p>                            <i class="fas fa-map-marker-alt"></i></p>
+
+<p>                            <div></p>
+
+<p>                                <h4>Our Location</h4></p>
+
+<p>                                <p>123 Business Avenue, Suite 100<br>San Francisco, CA 94107</p></p>
+
+<p>                            </div></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="contact-item"></p>
+
+<p>                            <i class="fas fa-phone-alt"></i></p>
+
+<p>                            <div></p>
+
+<p>                                <h4>Call Us</h4></p>
+
+<p>                                <p>+1 (555) 123-4567</p></p>
+
+<p>                            </div></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="contact-item"></p>
+
+<p>                            <i class="fas fa-envelope"></i></p>
+
+<p>                            <div></p>
+
+<p>                                <h4>Email Us</h4></p>
+
+<p>                                <p>info@nexussolutions.com</p></p>
+
+<p>                            </div></p>
+
+<p>                        </div></p>
+
+<p>                    </div></p>
+
+<p>                </div></p>
+
+<p>                <div class="contact-form"></p>
+
+<p>                    <form></p>
+
+<p>                        <div class="form-group"></p>
+
+<p>                            <label for="name">Full Name</label></p>
+
+<p>                            <input type="text" id="name" placeholder="Enter your name"></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="form-group"></p>
+
+<p>                            <label for="email">Email Address</label></p>
+
+<p>                            <input type="email" id="email" placeholder="Enter your email"></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="form-group"></p>
+
+<p>                            <label for="subject">Subject</label></p>
+
+<p>                            <input type="text" id="subject" placeholder="Enter subject"></p>
+
+<p>                        </div></p>
+
+<p>                        <div class="form-group"></p>
+
+<p>                            <label for="message">Your Message</label></p>
+
+<p>                            <textarea id="message" placeholder="Enter your message"></textarea></p>
+
+<p>                        </div></p>
+
+<p>                        <button type="submit" class="btn">Send Message</button></p>
+
+<p>                    </form></p>
+
+<p>                </div></p>
+
+<p>            </div></p>
+
+<p>        </div></p>
+
+<p>    </section></p>
+
+<p> </p>
+
+<p>    <!-- Footer --></p>
+
+<p>    <footer></p>
+
+<p>        <div class="container"></p>
+
+<p>            <div class="footer-container"></p>
+
+<p>                <div class="footer-col"></p>
+
+<p>                    <h3>Nexus Solutions</h3></p>
+
+<p>                    <p>Providing innovative technology solutions to help businesses grow and succeed in the digital age.</p></p>
+
+<p>                    <div class="social-links"></p>
+
+<p>                        <a href="#"><i class="fab fa-facebook-f"></i></a></p>
+
+<p>                        <a href="#"><i class="fab fa-twitter"></i></a></p>
+
+<p>                        <a href="#"><i class="fab fa-instagram"></i></a></p>
+
+<p>                        <a href="#"><i class="fab fa-linkedin-in"></i></a></p>
+
+<p>                    </div></p>
+
+<p>                </div></p>
+
+<p>                <div class="footer-col"></p>
+
+<p>                    <h3>Quick Links</h3></p>
+
+<p>                    <ul></p>
+
+<p>                        <li><a href="#home">Home</a></li></p>
+
+<p>                        <li><a href="#services">Services</a></li></p>
+
+<p>                        <li><a href="#about">About Us</a></li></p>
+
+<p>                        <li><a href="#testimonials">Testimonials</a></li></p>
+
+<p>                        <li><a href="#contact">Contact</a></li></p>
+
+<p>                    </ul></p>
+
+<p>                </div></p>
+
+<p>                <div class="footer-col"></p>
+
+<p>                    <h3>Services</h3></p>
+
+<p>                    <ul></p>
+
+<p>                        <li><a href="#">Web Development</a></li></p>
+
+<p>                        <li><a href="#">App Development</a></li></p>
+
+<p>                        <li><a href="#">UI/UX Design</a></li></p>
+
+<p>                        <li><a href="#">Digital Marketing</a></li></p>
+
+<p>                        <li><a href="#">SEO Services</a></li></p>
+
+<p>                    </ul></p>
+
+<p>                </div></p>
+
+<p>                <div class="footer-col"></p>
+
+<p>                    <h3>Newsletter</h3></p>
+
+<p>                    <p>Subscribe to our newsletter for the latest updates and offers.</p></p>
+
+<p>                    <form></p>
+
+<p>                        <div class="form-group"></p>
+
+<p>                            <input type="email" placeholder="Enter your email" style="border-radius: 50px; padding: 0.8rem 1.2rem;"></p>
+
+<p>                        </div></p>
+
+<p>                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button></p>
+
+<p>                    </form></p>
+
+<p>                </div></p>
+
+<p>            </div></p>
+
+<p>            <div class="copyright"></p>
+
+<p>                <p>&copy; 2023 Nexus Solutions. All Rights Reserved.</p></p>
+
+<p>            </div></p>
+
+<p>        </div></p>
+
+<p>    </footer></p>
+
+<p> </p>
+
+<p>    <script></p>
+
+<p>        // Smooth scrolling for anchor links</p>
+
+<p>        document.querySelectorAll('a[href^="#"]').forEach(anchor => {</p>
+
+<p>            anchor.addEventListener('click', function (e) {</p>
+
+<p>                e.preventDefault();</p>
+
+<p>                </p>
+
+<p>                document.querySelector(this.getAttribute('href')).scrollIntoView({</p>
+
+<p>                    behavior: 'smooth'</p>
+
+<p>                });</p>
+
+<p>            });</p>
+
+<p>        });</p>
+
+<p> </p>
+
+<p>        // Mobile menu toggle</p>
+
+<p>        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');</p>
+
+<p>        const navMenu = document.querySelector('nav ul');</p>
+
+<p>        </p>
+
+<p>        mobileMenuBtn.addEventListener('click', () => {</p>
+
+<p>            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';</p>
+
+<p>        });</p>
+
+<p> </p>
+
+<p>        // Sticky header effect</p>
+
+<p>        window.addEventListener('scroll', () => {</p>
+
+<p>            const header = document.querySelector('header');</p>
+
+<p>            header.classList.toggle('sticky', window.scrollY > 100);</p>
+
+<p>        });</p>
+
+<p>    </script></p>
+
+<p></body></p>
+
+<p></html></p>
